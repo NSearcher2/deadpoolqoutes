@@ -5,13 +5,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+	<link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
+    <style>
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]+label {
+            display: block;
+            position: relative;
+            padding-left: 40px;
+            padding-top: 5px;
+            font: 14px/20px 'Open Sans', Arial, sans-serif;
+            color: #ddd;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            background-position: center;
+        }
+
+        input[type="checkbox"]+label:last-child {
+            margin-bottom: 0;
+        }
+
+        input[type="checkbox"]+label:before {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url('deadpoollogo1.png');
+            background-repeat: no-repeat;
+        }
+
+        input[type="checkbox"]:checked+label:before {
+            background-image: url('deadpoollogo2.png');
+            background-repeat: no-repeat;
+        }
+
+        li {
+            margin: 50px 0px;
+        }
+    </style>
 </head>
 
-<body>
-    <main>
+<body style="height: 100%; margin: auto;">
+    <main style="background-color: #000105;">
         <article>
             <div class="stackable grid">
-                <divclass="row">
+                <div class="row">
                     <div class="sixteen wide center aligned column">
                     </div>
                 </div>
@@ -19,7 +65,7 @@
                     <div class="eight wide column">
                     </div>
                     <div class="eight wide column">
-                        <ul>
+                        <ul style="margin-top:200px;>
                             <li class="details">
                                 <input type="checkbox" id="redSuite">
                                 <label for="redSuite">
